@@ -31,7 +31,7 @@ const Products = [
         category:"Smartphones",
         discription:"Our smartphones are crafted to seamlessly blend technology and style, offering you a sophisticated and intuitive mobile experience. With a commitment to quality and cutting-edge features, our devices empower you to stay connected, capture memories, and express your individuality.",
         about:"Discover a world of innovation with our line of smartphones. Our smartphones are crafted to seamlessly blend technology and style, offering you a sophisticated and intuitive mobile experience. With a commitment to quality and cutting-edge features, our devices empower you to stay connected, capture memories, and express your individuality. Explore our range of smartphones, each designed to elevate your digital lifestyle to new heights",
-        image: "https://firsthub.in/public/uploads/all/oY2dexIEkd5T4LqePMaUDm0t2X2uQlWukE15sOVH.webp",
+        image: "https://backend.gadgetgalli.com.np/uploads/category/iphone16plus.jpg",
         image1: "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740&q=80",
         image2: "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740&q=80",
     },

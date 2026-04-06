@@ -64,7 +64,7 @@ const Productid = () => {
 
           return(
             
-             <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`}>
+             <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`} onClick={()=>scrollTo(0,0)}>
             <div className=' bg-black '>
               
              

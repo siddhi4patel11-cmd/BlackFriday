@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
 
-      <div className='grid grid-cols-2 px-22 p-10  h-screen bg-[url(img/bg-1.jpg)]  bg-cover bg-center w-full'>
+      <div className='grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2  px-22 p-10  bg-[url(img/bg-1.jpg)]  bg-cover bg-center w-full'>
         <div className=' border-white gap-3 mt-50'>
           <div class="col-span-3 col-start-2 ">
             <p className="text-red-400 italic  text-xl mb-4">
@@ -60,7 +60,7 @@ const Home = () => {
 
 
 
-      <div className='grid grid-cols-2 mx-auto p-22 bg-black relative'>
+      <div className='grid grid-cols-2 mx-auto p-22 bg-black relative '>
         <div className='mt-70'>
           <p className='text-red-400 font-semibold italic text-3xl'>
               Black Friday Exclusive
@@ -75,24 +75,32 @@ const Home = () => {
             Shop now
           </button>
         </div>
-        <div className='p-10'>
+
+        <div className=' md:grid-cols-1'>
+            <div className='p-10'>
           <img src={pic3} alt="" width={600} />
         </div>
 
           <div className='absolute left-[45%] top-[150px] w-[200px]'>
             <img src={pic4}alt=""/>
           </div>
+        </div>
+        
       </div>
 
-      <div className='bg-black flex flex-col justify-center items-center text-center '>
-        <p className="text-red-400 italic font-semibold text-3xl  mt-20">
-            Unbelievable Discounts Await You  
-        </p>
-        <p className='text-white text-5xl font-extrabold mt-2'>
-            BLACK FRIDAY MADNESS IS HERE!
-        </p>
-        <hr className='color-white mt-30' />
-      </div>
+      <div className='bg-black flex flex-col justify-center items-center text-center px-4 py-12 md:py-16'>
+  
+  <p className="text-red-400 italic font-semibold text-lg sm:text-xl md:text-2xl">
+    Unbelievable Discounts Await You  
+  </p>
+
+  <p className='text-white text-2xl sm:text-3xl md:text-5xl font-extrabold mt-2'>
+    BLACK FRIDAY MADNESS IS HERE!
+  </p>
+
+  <hr className='w-24 md:w-40 border-white mt-6' />
+
+</div>
 
       <div class="@container bg-black">
         <div class="flex flex-col @md:flex-row mb-20">
@@ -117,12 +125,12 @@ const Home = () => {
         </div>
       </div>
 
-    <div className=' bg-black grid grid-cols-3 mx-auto p-10'>
+    <div className=' bg-black  grid grid-cols-3 mx-auto p-10'>
       <div className='p-10'>
-        <p className="text-red-400 italic font-semibold text-3xl  ">
-            Why Choose BlackFridayShop?       
-       </p>
-        <p className='text-white text-5xl font-extrabold mt-2'>
+        <p className="text-red-400 italic font-semibold text-xl sm:text-2xl md:text-3xl text-center md:text-left">
+  Why Choose BlackFridayShop?
+</p>
+        <p className='text-white  font-extrabold mt-2 md:text-xl xl:text-4xl lg:text-3xl sm:text-md '>
            THE JOY OF SHOPPING AT ITS BEST        
         </p>
       </div>
@@ -190,17 +198,17 @@ const Home = () => {
       </div>
       </div>
 
-      <div className=' grid grid-cols-4 gap-3 mt-5 bg-black'>
+      <div className=' md:grid-cols-2  sm:grid-cols-1  grid xl:grid-cols-4 gap-3 mt-5 bg-black'>
         {Products.slice(0,4).map((iteam)=>{
 
           return(
 
             <div className='border bg-black '>
               
-              <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`}>
-              <p><img src={iteam.image} className='w-[500px] h-[400px]' alt=""/></p>
+              <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`} onClick={()=>scrollTo(0,0)}>
+              <p className='w-[350px] h-[400px]'><img src={iteam.image} className='w-full h-full' alt=""/></p>
               <p className='text-white'>{iteam.title}</p>
-              <p className='text-white'>{iteam.offer}</p>
+              <p className='text-white'>{iteam.offer}%</p>
               <p className='text-white'>{iteam.price}</p>
               <p className='flex text-red-700'><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></p>
               <p className='text-white'>{iteam.category}</p>
@@ -211,30 +219,6 @@ const Home = () => {
           )
         })}
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

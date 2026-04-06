@@ -6,14 +6,14 @@ import { CiStar } from "react-icons/ci";
 const Shop = () => {
   return (
     <>
-       <div className=' grid grid-cols-4 gap-3 mt-5 bg-black'>
+       <div className=' md:grid-cols-2 sm:grid-cols-1 grid xl:grid-cols-4 gap-3 mt-5 bg-black'>
         {Products.map ((iteam)=>{
 
           return(
 
             <div className='border  bg-black '>
               
-              <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`}>
+              <Link className='text-white ' to={`/productid/${iteam.id}/${iteam.category}`} onClick={()=>scrollTo(0,0)}>
               <p><img src={iteam.image} className='w-[500px] h-[400px]' alt=""/></p>
               <p className='text-white'>{iteam.title}</p>
               <p className='text-white'>{iteam.offer}</p>
